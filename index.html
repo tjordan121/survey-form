@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Survey Form</title>
+<link rel="stylesheet" href="surveyform.css">
+<head>
+    <h1 id="title">Please complete the survey!</h1>
+</head>
+<body>
+<div>
+<p id="description">Completion of this survey will help with out work and we apprecaite it a lot kthxbai</p>
+</div>
+<form id="survey-form">
+    <label id="name-label" for="name">Name: </label>
+    <input type="text" id="name" name="survey-form" placeholder="Enter name here" required><br>
+
+    <label id="email-label" for="email">Email: </label>
+    <input type="email" id="email" name="survey-form" placeholder="Enter email here" required><br>
+
+    <label id="number-label" for="number">Age: </label>
+    <input type="number" id="number" name="survey-form" min="10" max="50" placeholder="Enter age here"><br>
+    
+    <label for="cars" for="dropdown">Gender: </label>
+    <select name="cars" id="dropdown">
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Other">Other</option>
+        <option value="Notsay">Prefer not to say</option>
+    </select><br>
+    
+    <label id="language-label" for="fav_language">Favourite language: </label><br>
+    <input type="radio" id="html" name="fav_language" value="HTML">
+    <label for="html">HTML</label><br>
+
+    <input type="radio" id="css" name="fav_language" value="CSS">
+    <label for="css">CSS</label><br>
+
+    <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+    <label for="javascript">JavaScript</label><br>
+    
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> I have a bike</label><br>
+
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2"> I have a car</label><br>
+
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3"> I have a boat</label><br><br>
+
+    <label for="addtional-comments">Please provide additional comment below.</label><br>    
+    <textarea id="additional-comments" name="additional-comments" rows="8" cols="50">
+    </textarea><br>
+
+    <input type="submit" id="submit" value="Submit!">
+</form>
+
+
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
